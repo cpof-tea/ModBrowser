@@ -7,6 +7,10 @@
     display: none;
 }
 
+.col-span-full {
+    grid-column: 1 / -1;
+}
+
 .columns {
     display: flex;
 }

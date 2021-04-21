@@ -65,33 +65,16 @@ nav a:hover {
 
 #main-nav-buttons {
     /* Need to hide this if window width is under 768px, and switch to menu button */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
     width: 300px;
     position: absolute;
     top: -48px;
     right: 0;
     background: var(--spore-mid-space);
-    border-bottom: 4px var(--spore-mid-space) solid;
-    border-left: 4px var(--spore-mid-space) solid;
+    padding: 0 0 4px 4px;
     border-radius: 0 0 0 24px;
-}
-
-#main-nav-buttons a {
-    padding: 0;
-}
-
-#main-nav-buttons button {
-    width: 100%;
-    height: 40px;
-    margin-bottom: 4px;
-}
-
-#main-nav-buttons nav {
-    display: flex;
-}
-
-#main-nav-buttons nav a {
-    flex: 50%;
-    padding: 0 2px;
 }
 
 /* Footer styles */
