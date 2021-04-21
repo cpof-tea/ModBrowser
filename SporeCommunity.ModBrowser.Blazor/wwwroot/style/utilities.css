@@ -1,4 +1,7 @@
-﻿/* Reusable styles */
+﻿/**
+ * As project grows, here will appear some atomic-css utility classes from Tailwind.
+ * See more: https://tailwindcss.com/docs
+ */
 
 .hidden {
     display: none;
