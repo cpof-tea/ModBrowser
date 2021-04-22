@@ -20,19 +20,19 @@
         <ul>
             @if (Mod.IsExperimental)
             {
-                <li class="accent-orange">Experimental</li>
+                <li class="text-accent-orange">Experimental</li>
             }
             @if (Mod.RequiresGalaxyReset)
             {
-                <li class="accent-orange">Requires Galaxy Reset</li>
+                <li class="text-accent-orange">Requires Galaxy Reset</li>
             }
             @if (Mod.CausesSaveDataDependency)
             {
-                <li class="accent-orange">Causes Save Data Dependency</li>
+                <li class="text-accent-orange">Causes Save Data Dependency</li>
             }
             @if (Mod.DownloadUrl is null)
             {
-                <li class="accent-orange">No Download Available</li>
+                <li class="text-accent-orange">No Download Available</li>
             }
         </ul>
 
@@ -59,15 +59,15 @@
 
         @if(Mod!.IsExperimental)
         {
-            <p class="accent-orange">This mod is experimental. It may contain bugs or other issues. Install at your own risk.</p>
+            <p class="text-accent-orange">This mod is experimental. It may contain bugs or other issues. Install at your own risk.</p>
         }
         @if(Mod!.RequiresGalaxyReset)
         {
-            <p class="accent-orange">This mod requires a galaxy reset to take effect. This will erase your saved games.</p>
+            <p class="text-accent-orange">This mod requires a galaxy reset to take effect. This will erase your saved games.</p>
         }
         @if(Mod!.CausesSaveDataDependency)
         {
-            <p class="accent-orange">This mod causes save data dependency. Uninstalling this mod may corrupt or damage your saved games.</p>
+            <p class="text-accent-orange">This mod causes save data dependency. Uninstalling this mod may corrupt or damage your saved games.</p>
         }
 
         <input id="SuppressDownloadDialog" type="checkbox" @onchange="OnSuppressDialog"><label for="SuppressDownloadDialog">Don't show this message again</label>
