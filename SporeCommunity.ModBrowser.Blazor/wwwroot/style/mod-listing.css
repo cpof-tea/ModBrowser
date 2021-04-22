@@ -51,9 +51,11 @@
     position: absolute;
     top: 8px;
     right: 8px;
+    display: flex;
+    flex-direction: column;
     width: 128px;
 }
-.mod-listing .mod-buttons button {
-    width: 100%;
-    margin-bottom: 8px;
+
+.mod-listing .mod-buttons > * + * {
+    margin-top: 8px;
 }
