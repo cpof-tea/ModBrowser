@@ -11,6 +11,30 @@
     grid-column: 1 / -1;
 }
 
+.accent-green {
+    color: var(--spore-accent-green);
+}
+
+.accent-orange {
+    color: var(--spore-accent-orange);
+}
+
+.accent-purple {
+    color: var(--spore-accent-purple);
+}
+
+.accent-green-bg {
+    background: var(--spore-accent-green-gradient);
+}
+
+.accent-orange-bg {
+    background: var(--spore-accent-orange-gradient);
+}
+
+.accent-purple-bg {
+    background: var(--spore-accent-purple-gradient);
+}
+
 .columns {
     display: flex;
 }
