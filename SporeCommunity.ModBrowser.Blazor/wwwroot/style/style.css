@@ -206,7 +206,8 @@ article h1:first-of-type {
     align-items: center;
 }
 
-.loading img {
+.loading img,
+.loading svg {
     height: 1em;
     width: 1em;
     margin: 8px;
