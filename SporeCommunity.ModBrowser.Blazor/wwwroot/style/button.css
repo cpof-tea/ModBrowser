@@ -1,0 +1,44 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  height: 36px;
+  border: 3px solid var(--spore-neutral);
+  border-radius: 50rem;
+  padding: 5px 13px;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--spore-font);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--spore-white);
+  background-image: var(--spore-space-gradient);
+  transition: border-color ease 0.1s;
+  cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+  border-color: var(--spore-light-space);
+  color: var(--spore-white);
+}
+
+.button:active {
+  background-image: var(--spore-deep-space-gradient);
+}
+
+.button:disabled {
+  color: var(--spore-neutral);
+  cursor: default;
+}
+
+.button:disabled:hover {
+  border-color: var(--spore-neutral);
+  color: var(--spore-neutral);
+}
+
+.button-large {
+  height: 40px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}

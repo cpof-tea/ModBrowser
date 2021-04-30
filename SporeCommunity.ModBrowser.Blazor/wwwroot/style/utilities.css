@@ -1,0 +1,74 @@
+﻿/**
+ * As project grows, here will appear some atomic-css utility classes from Tailwind.
+ * See more: https://tailwindcss.com/docs
+ */
+
+.hidden {
+    display: none;
+}
+
+.col-span-full {
+    grid-column: 1 / -1;
+}
+
+.text-accent-green {
+    color: var(--spore-accent-green);
+}
+
+.text-accent-orange {
+    color: var(--spore-accent-orange);
+}
+
+.text-accent-purple {
+    color: var(--spore-accent-purple);
+}
+
+.text-light-space {
+    color: var(--spore-light-space);
+}
+
+.text-deep-grey {
+    color: var(--spore-deep-grey);
+}
+
+.text-mid-space {
+    color: var(--spore-mid-space);
+}
+
+.text-light-space {
+    color: var(--spore-light-space);
+}
+
+.text-cool {
+    color: var(--spore-cool);
+}
+
+.text-neutral {
+    color: var(--spore-neutral);
+}
+
+.text-white {
+    color: var(--spore-white);
+}
+
+.accent-green-bg {
+    background: var(--spore-accent-green-gradient);
+}
+
+.accent-orange-bg {
+    background: var(--spore-accent-orange-gradient);
+}
+
+.accent-purple-bg {
+    background: var(--spore-accent-purple-gradient);
+}
+
+.columns {
+    display: flex;
+}
+
+    .columns div {
+        flex: 25%;
+        font-size: 14px;
+        padding: 0 4px;
+    }
