@@ -20,24 +20,24 @@
         <ul>
             @if (Mod.IsExperimental)
             {
-                <li class="text-accent-orange">Experimental</li>
+                <li class="badge text-accent-orange">Experimental</li>
             }
             @if (Mod.RequiresGalaxyReset)
             {
-                <li class="text-accent-orange">Requires Galaxy Reset</li>
+                <li class="badge text-accent-orange">Requires Galaxy Reset</li>
             }
             @if (Mod.CausesSaveDataDependency)
             {
-                <li class="text-accent-orange">Causes Save Data Dependency</li>
+                <li class="badge text-accent-orange">Causes Save Data Dependency</li>
             }
             @if (Mod.DownloadUrl is null)
             {
-                <li class="text-accent-orange">No Download Available</li>
+                <li class="badge text-accent-orange">No Download Available</li>
             }
         </ul>
 
         <div class="mod-buttons">
-            <button class="button accent-green-bg" @onclick="OpenDownloadDialog" disabled="@IsDownloadUnavailable">Download</button>
+            <button class="button accent-green-bg" @onclick="OpenDownloadDialog" disabled="@IsDownloadUnavailable" type="button">Download</button>
             @if (Mod.ProjectUrl is not null)
             {
                 <a class="button" target="_blank" rel="noopener noreferrer" href="@Mod.ProjectUrl">Website</a>
