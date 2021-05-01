@@ -11,8 +11,23 @@
 }
 
 @font-face {
-    font-family: "Trebuchet EA";
-    src: url(fonts/trebucheteabold.ttf);
+    font-family: "Trebuchet";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url(fonts/Trebuchet-MS-Regular.woff2) format("woff2"),
+        url(fonts/Trebuchet-MS-Regular.woff) format("woff"),
+        url(fonts/Trebuchet-MS-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Trebuchet";
+    font-style: normal;
+    font-weight: 700;
+    src:
+        url(fonts/Trebuchet-MS-Bold.woff2) format("woff2"),
+        url(fonts/Trebuchet-MS-Bold.woff) format("woff"),
+        url(fonts/Trebuchet-MS-Bold.ttf);
 }
 
 @font-face {
@@ -47,7 +62,7 @@ html {
     /* Fonts */
     --spore-font: Spore-Regular, sans-serif;
     --spore-heading-font: "Palatino Sans EA", sans-serif;
-    --spore-body-font: "Trebuchet EA", sans-serif;
+    --spore-body-font: "Trebuchet", sans-serif;
     /* Images */
     --spore-glyphic-bg-dark: url(images/glyphic-bg-dark.png);
 }
