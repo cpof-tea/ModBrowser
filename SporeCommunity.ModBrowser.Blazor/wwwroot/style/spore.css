@@ -47,18 +47,27 @@ html {
     --spore-light-space: #4E9DD8;
     --spore-mid-space: #2361A7;
     --spore-deep-space: #000112;
-    --spore-accent-green: #B1CD49;
-    --spore-accent-orange: #E0932F;
-    --spore-accent-purple: #CA0088;
+    --spore-moon: hsl(206, 58%, 95%);
+    --spore-moon-darker: hsl(209, 72%, 87%);
+    --spore-accent-green: hsl(117, 61%, 49%);
+    --spore-accent-green-darker: hsl(117, 61%, 33%);
+    --spore-accent-orange: hsl(37, 87%, 49%);
+    --spore-accent-orange-darker: hsl(37, 87%, 35%);
+    --spore-accent-purple: hsl(305, 50%, 57%);
+    --spore-accent-purple-darker: hsl(305, 37%, 46%);
+    --spore-accent-blue: hsl(215, 89%, 66%);
+    --spore-accent-blue-darker: hsl(215, 44%, 48%);
     /* Gradients */
     --spore-text-gradient: linear-gradient(#F6F6F6, #CED1D4);
     --spore-cool-gradient: linear-gradient(#FFFFFF, #E9EEF0);
     --spore-glass-pane-gradient: linear-gradient(#FBFBFB, #E4F0F6);
-    --spore-space-gradient: linear-gradient(#4171B5, #5057A3, #272458);
+    --spore-space-gradient: linear-gradient(hsl(206, 64%, 58%), hsl(212, 65%, 27%));
     --spore-deep-space-gradient: linear-gradient(#2070B8, #233164, #00000D);
-    --spore-accent-green-gradient: linear-gradient(#B1CD49, #004620);
-    --spore-accent-orange-gradient: linear-gradient(#E0932F, #A42433);
-    --spore-accent-purple-gradient: linear-gradient(#CA0088, #5B308D);
+    --spore-accent-green-gradient: linear-gradient(var(--spore-accent-green), var(--spore-accent-green-darker));
+    --spore-accent-orange-gradient: linear-gradient(var(--spore-accent-orange), var(--spore-accent-orange-darker));
+    --spore-accent-purple-gradient: linear-gradient(var(--spore-accent-purple), var(--spore-accent-purple-darker));
+    --spore-accent-blue-gradient: linear-gradient(var(--spore-accent-blue), var(--spore-accent-blue-darker));
+    --spore-moon-gradient: linear-gradient(var(--spore-moon), var(--spore-moon-darker));
     /* Fonts */
     --spore-font: Spore-Regular, sans-serif;
     --spore-heading-font: "Palatino Sans EA", sans-serif;

@@ -64,6 +64,8 @@ nav a:hover {
 }
 
 #main-nav-buttons {
+    --button-border-color: hsla(204, 27%, 19%, 45%);
+
     /* Need to hide this if window width is under 768px, and switch to menu button */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -167,26 +169,22 @@ input:focus {
 }
 
 button {
-    background: var(--spore-space-gradient);
-    color: var(--spore-white);
-    font-family: var(--spore-font);
-    font-size: 18px;
-    padding: 5px 13px;
-    border: 3px var(--spore-neutral) solid;
-    border-radius: 32px;
-    transition: 0.1s;
+    background-color: transparent;
+    color: currentColor;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
 }
 
 button:hover {
-    border-color: var(--spore-light-space);
-}
-
-button:active {
-    background: var(--spore-deep-space-gradient);
+    color: currentColor;
 }
 
 button:disabled {
     color: var(--spore-neutral);
+    cursor: default;
 }
 
 /* Main content styles */

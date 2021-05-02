@@ -37,14 +37,14 @@
         </ul>
 
         <div class="mod-buttons">
-            <button class="button accent-green-bg" @onclick="OpenDownloadDialog" disabled="@IsDownloadUnavailable" type="button">Download</button>
+            <button class="button button-accent-green" @onclick="OpenDownloadDialog" disabled="@IsDownloadUnavailable" type="button">Download</button>
             @if (Mod.ProjectUrl is not null)
             {
-                <a class="button" target="_blank" rel="noopener noreferrer" href="@Mod.ProjectUrl">Website</a>
+                <a class="button button-accent-blue" target="_blank" rel="noopener noreferrer" href="@Mod.ProjectUrl">Website</a>
             }
             @if (Mod.RepositoryUrl is not null)
             {
-                <a class="button" target="_blank" rel="noopener noreferrer" href="@Mod.RepositoryUrl">GitHub</a>
+                <a class="button button-accent-blue" target="_blank" rel="noopener noreferrer" href="@Mod.RepositoryUrl">GitHub</a>
             }
         </div>
     }
@@ -73,8 +73,8 @@
         <input id="SuppressDownloadDialog" type="checkbox" @onchange="OnSuppressDialog"><label for="SuppressDownloadDialog">Don't show this message again</label>
 
         <div>
-            <button class="button" @onclick="CloseDialog">Cancel</button>
-            <button class="button accent-green-bg" @onclick="OpenDownloadUrl">Download Mod</button>
+            <button class="button button-moon" @onclick="CloseDialog">Cancel</button>
+            <button class="button button-accent-green" @onclick="OpenDownloadUrl">Download Mod</button>
         </div>
     </div>
 }
